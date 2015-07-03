@@ -2,7 +2,7 @@
 
 # What is Comanche? #
 
-Comanche is a static site builder written in PHP. It is currently set up to create a blog-like site, with individual posts, a front/index page, an archive page, an RSS feed, and a sitemap.
+Comanche is a static site builder written in PHP. It is currently set up to create a blog-like site, with individual posts, a front/index page, an archive page, an RSS feed, and a sitemap. You can see a live demo at [http://comanche.treddell.com](http://comanche.treddell.com/).
 
 # Requirements #
 
@@ -13,7 +13,7 @@ Comanche is a static site builder written in PHP. It is currently set up to crea
 
 To use Comanche:
 
-1. Clone this repo: `git clone https://githube.com/travisred/comanche.git`
+1. Clone this repo: `git clone https://github.com/travisred/comanche.git`
 2. Add your data to config.txt
 3. Create or edit a markdown-formatted file in the `md` folder
 4. Build your site: `php comanche.php`
