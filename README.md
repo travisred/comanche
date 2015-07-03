@@ -1,4 +1,4 @@
-![comanche](https://raw.github.com/travisred/comanche/master/screen-commanche.png)
+![comanche](https://raw.github.com/travisred/comanche/master/screen-comanche.png)
 
 # What is Comanche? #
 
