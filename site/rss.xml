@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+ <title>Comanche</title>
+ <description>a static site builder</description>
+ <link>http://comanche.treddell.com</link>
+ <lastBuildDate>Fri, 03 Jul 2015 12:50:40 -0600</lastBuildDate>
+  <item>
+				  <title>Hello, World! or How to use Comanche</title>
+				  <link>http://comanche.treddell.com/how-to-use-comanche</link>
+				  <pubDate>2015-07-02</pubDate>
+				 </item> 
+</channel>
+</rss>

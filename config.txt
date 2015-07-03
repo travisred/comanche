@@ -1,0 +1,4 @@
+site_title: Comanche
+site_description: a static site builder
+site_root: http://comanche.treddell.com
+front_page_count: 5
