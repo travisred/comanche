@@ -26,8 +26,8 @@
 		public function setIndexHtml($posts) 
 		{
 			$this->html = $this::readFileContent('templates/index_template.html');
+			$format = '<div class="post-content"><h1><a href="%s/%s">%s</a></h1><hr><p><i>%s</i></p>%s</div>';
 			foreach ($posts as $post) {
-				$format = '<div class="post-content"><h1><a href="%s/%s">%s</a></h1><hr><p><i>%s</i></p>%s</div>';
 				$this->content .= sprintf($format, $this->site_root, $post->file_name, $post->title, $post->date, $post->content);
 			}	
 			$vars = get_object_vars($this);
@@ -40,8 +40,8 @@
 		{
 			$this->archive_html = $this::readFileContent('templates/archive_template.html');
 			$this->content = '';
+			$format = '<h3><a href="%s/%s">%s - %s</a></h3>';
 			foreach ($this->posts as $post) {
-				$format = '<h3><a href="%s/%s">%s - %s</a></h3>';
 				$this->content .= sprintf($format, $this->site_root, $post->file_name, $post->date, $post->title);
 			}	
 			$vars = get_object_vars($this);
@@ -54,12 +54,12 @@
 		{
 			$this->xml = $this::readFileContent('templates/rss_template.xml');
 			$this->content = '';
+			$format = '<item>
+			  <title>%s</title>
+			  <link>%s/%s</link>
+			  <pubDate>%s</pubDate>
+			 </item>';
 			foreach ($this->posts as $post) {
-				$format = '<item>
-				  <title>%s</title>
-				  <link>%s/%s</link>
-				  <pubDate>%s</pubDate>
-				 </item>';
 				$this->content .= sprintf($format, $post->title, $this->site_root, $post->file_name, $post->date);
 			}
 			$this->last_rss_build_date = date('r', time());	
@@ -72,8 +72,8 @@
 		public function setSitemapTxt() 
 		{
 			$this->sitemap = '';
+			$format = "%s/%s\n";
 			foreach ($this->posts as $post) {
-				$format = "%s/%s\n";
 				$this->sitemap .= sprintf($format, $this->site_root, $post->file_name);
 			}
 		}
