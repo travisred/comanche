@@ -86,7 +86,7 @@
 			$dirs = glob('site/*');
 
 			foreach ($dirs as $dir) {
-				if (!in_array(split('/', $dir)[1], $allowed_items)) {
+				if (!in_array(explode('/', $dir)[1], $allowed_items)) {
 					unlink($dir . '/index.html');
 					rmdir($dir);
 				}

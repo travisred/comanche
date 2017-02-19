@@ -35,7 +35,7 @@
 			foreach ($config_content as $item) {
 				if (!empty($item)) {
 					$item = explode(': ', $item);
-					$site->$item[0] = $item[1];
+					$site->{$item[0]} = $item[1];
 				}
 			}
 		}

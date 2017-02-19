@@ -16,7 +16,7 @@
 
 		public function __construct($file_name, $raw_post) 
 		{
-			$this->file_name = split('/', $file_name)[1];
+			$this->file_name = explode('/', $file_name)[1];
 			$this->raw_post = explode("\n", $raw_post);
 		}
 
