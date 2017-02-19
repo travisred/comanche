@@ -1,7 +1,7 @@
 <?php
-	class Utility 
+	class Utility
 	{
-		public static function readFileContent($file_path) 
+		public static function readFileContent($file_path)
 		{
 			$file_handle = fopen($file_path, 'r');
 			$file_content = fread($file_handle, filesize($file_path));
@@ -9,7 +9,7 @@
 			return $file_content;
 		}
 
-		public static function writeFileContent($file_path, $file_content) 
+		public static function writeFileContent($file_path, $file_content)
 		{
 			$path_pieces = explode('/', $file_path);
 			$file_name = array_pop($path_pieces);
