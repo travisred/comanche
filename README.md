@@ -7,7 +7,7 @@ Comanche is a static site builder written in PHP. It is currently set up to crea
 # Requirements #
 
 * Linux/Mac OS
-* php CLI installation (tested with php 5.6.4)
+* php CLI installation (tested with php 8.0.0)
 
 # How to use Comanche #
 
