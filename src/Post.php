@@ -31,7 +31,7 @@
 		public function setPostContent()
 		{
 			$Parsedown = new Parsedown();
-			$content = implode(array_splice($this->raw_post, 5), "\n");
+			$content = implode("\n", array_splice($this->raw_post, 5));
 			$this->content = $Parsedown->text($content);
 		}
 
