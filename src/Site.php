@@ -60,7 +60,7 @@
 			  <pubDate>%s</pubDate>
 			 </item>';
 			foreach ($this->posts as $post) {
-				$this->content .= sprintf($format, $post->title, $this->site_root, $post->file_name, $post->date);
+				$this->content .= sprintf($format, htmlspecialchars($post->title), $this->site_root, $post->file_name, $post->date);
 			}
 			$this->last_rss_build_date = date('r', time());
 			$vars = get_object_vars($this);
